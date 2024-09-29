@@ -13,5 +13,11 @@ module.exports = {
       chainId: 11155111, // Sepolia Chain ID
       gas: "auto", // Allow automatic gas estimation
     },
+    blast: {
+      url: `https://blast-sepolia.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      accounts: [`0x${process.env.PRIVATE_KEY}`], // Use your private key from .env file
+      chainId: 168587773, // Blast Chain ID
+      gas: "auto", // Allow automatic gas estimation
+    },
   },
 };

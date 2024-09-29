@@ -4,13 +4,8 @@ module.exports = buildModule("StrategyDeploymentModule", (m) => {
   // Parameters (these can be overridden when running the deployment)
   const owner = m.getAccount(0);
 
-  console.log(owner);
-
   // Deploy Token0 (MyToken)
   const token0 = m.contract("MyToken", [owner], { id: "id0" });
-
-  console.log(token0);
-  // console.log(token0.wait());
 
   // Deploy Token1 (MyToken)
   const token1 = m.contract("MyToken", [owner], { id: "id1" });
@@ -33,9 +28,8 @@ module.exports = buildModule("StrategyDeploymentModule", (m) => {
     "StakingContract",
     [
       uniswapv2pair, // Ensure UniswapV2Pair is deployed first
-      strategycontract, // Ensure StrategyContract is deployed first
     ],
-    { after: [uniswapv2pair, strategycontract] }
+    { after: [uniswapv2pair] }
   ); // Ensure UniswapV2Pair and StrategyContract are deployed first
 
   // Deploy the ERC4626 Vault contract with the StakingContract address

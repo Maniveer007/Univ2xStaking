@@ -1,0 +1,8 @@
+{
+  "StrategyDeploymentModule#StrategyContract": "0xB70E8b730800c0977B85f9Fff0184d49B31C8Bd2",
+  "StrategyDeploymentModule#id0": "0xCAf9696188A4679B2c0e47b99894707c4b77Bd1B",
+  "StrategyDeploymentModule#id1": "0xBB23637e457765E060F18C9Fc341493654aa8AAA",
+  "StrategyDeploymentModule#UniswapV2Pair": "0x1e3ddCC563C5f439fDA82f212D14eaA55EB41050",
+  "StrategyDeploymentModule#StakingContract": "0xac56A25c9259f0Bb4a95CF05fD1477a74F192418",
+  "StrategyDeploymentModule#ERC4626": "0x688Af89BB251539dbb708750Ee63d62070300F33"
+}
